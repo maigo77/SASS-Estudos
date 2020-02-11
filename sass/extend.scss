@@ -1,0 +1,17 @@
+// % funciona como um seletor normal, mas ele nao sera pre-processado
+
+%erro{
+  color: red;
+}
+
+.atencao{
+  @extend %erro;
+  background: #FDD
+}
+
+.erro-grave{
+  @extend .atencao;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px
+}

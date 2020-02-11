@@ -1,0 +1,18 @@
+{
+  "name": "curso-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:menu": "node-sass sass/menu.scss css/menu.css -w",
+    "compile:mixin": "node-sass sass/mixin.scss css/mixin.css -w",
+    "compile:extend": "node-sass sass/extend.scss css/extend.css -w"
+  },
+  "author": "Augusto Seabra",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {}
+}

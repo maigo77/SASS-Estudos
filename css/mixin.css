@@ -1,0 +1,14 @@
+.red {
+  background: #F00;
+  color: #000; }
+
+.blue {
+  background: blue;
+  color: black; }
+
+.red {
+  background: red;
+  color: white; }
+
+.card {
+  box-shadow: 0 4px 4px #ccc, 2px 5px 8px #888; }

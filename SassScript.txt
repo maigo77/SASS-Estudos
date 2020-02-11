@@ -1,0 +1,56 @@
+Sobre o SassScript
+  Possibilita que se realize operações que normalmente são previstas em outras linguagens de SassScript.
+  As operações possibilitam comparação e manipulação de dados.
+
+  Operações com Números
+    Soma e Subtração
+      20px + 6px -> 26px
+      20px + 6em -> SyntaxError
+      20% + 6% -> 26%
+      20em + 6em - 4 -> 22em
+      4rem + 16 - 8rem - 2 -> 10rem
+      20 - 1px -> 19px
+
+    O sinal hífen (-)
+      font-size -> parte do identificador
+      -20px -> número negativo
+      6em - 4 -> operador de subtração
+      -$variavel -> operador unário de negação
+
+    Divisão
+      font: 16px/1.5 serif; -> O sinal de / separa font-size de line-height não realizando a divisão
+      Em Sass o sinal / a saída é o próprio /, exceto se um ou ambos os valores:
+      - da divisão forem armazenados em uma variável ou retornados por uma função
+      - estiverem entre parênteses e não fizerem parte de uma lista
+      - forem parte de uma expressão aritmética
+
+      $numero: 5
+      20px / 6 -> 20px/6
+      (100%) / 5 -> 20%
+      (24px / 6) -> 4px
+      (24px) / 6px -> 4px
+      34px - 12px / 6 -> 32px
+      35px / %numero -> 7px
+      34px - 12em / 6 -> SyntaxError
+
+    Multiplicação 
+      20px * 20px -> 400px * px (400px²)
+      20px * 20 -> 400px
+      20 * 20 -> 400
+
+      Transformando número adimensional:
+      20 * 1% -> 20%
+      20 * 1px -> 20px
+      20 * 1em -> 20em
+      20 * 1rem -> 20rem
+
+
+    Módulo da divisão
+      20 % 4 -> 0
+      4 % 20 -> 4
+
+    Operadores Relacionais e de Igualdade
+    20 > 4 -> true
+    augusto == 'augusto' -> true
+    Augusto == 'augusto' -> false
+    Augusto != 'augusto' -> true

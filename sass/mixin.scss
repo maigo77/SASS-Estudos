@@ -1,0 +1,32 @@
+// Mixin padrao ->
+@mixin colorir{
+  background: #F00;
+  color: #000
+}
+
+.red{
+  @include colorir;
+}
+
+// Mixin com parametros ->
+@mixin colorir2($cor-fundo, $cor-texto){
+  background: $cor-fundo;
+  color: $cor-texto;
+}
+
+.blue{
+  @include colorir2(blue, black)
+}
+
+.red{
+  @include colorir2(red, white)
+}
+
+// Mixin com numeros de argumentos desconhecidos ->
+@mixin box-shadow($sombras...){
+  box-shadow: $sombras
+}
+
+.card{
+  @include box-shadow(0 4px 4px #ccc, 2px 5px 8px #888)
+}

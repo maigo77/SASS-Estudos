@@ -1,0 +1,11 @@
+#content{
+  background: #111;
+  font-size: 1.2rem;
+  h1{
+   font-size: 1.4rem;
+  }
+  p:nth-child(odd){
+    font-size: 1rem;
+    color: red;
+  }
+}
