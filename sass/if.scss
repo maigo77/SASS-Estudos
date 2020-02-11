@@ -8,6 +8,9 @@
   }@else if($horario == noite){
     background: black;
     color: white
+  }@else{
+    background: yellow;
+    color: blue
   }
 }
 
